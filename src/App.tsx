@@ -11,9 +11,11 @@ function App() {
   return (
     <div className="container min-h-screen flex justify-center items-center">
       <Popover>
-        <PopoverTrigger>Open DatePicker</PopoverTrigger>
+        <PopoverTrigger>
+          <Button>Open DatePicker</Button>
+        </PopoverTrigger>
         <PopoverContent className="w-82">
-          <DatePicker />
+          <DatePicker onChange={(date) => console.log({ date })} />
         </PopoverContent>
       </Popover>
     </div>
