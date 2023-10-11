@@ -112,9 +112,9 @@ const DatePicker: React.FC<DatePickerProps> = ({
     if (disableOutOfMonth) {
       const startDayOfMonth = firstDayOfCurrentMonth;
       const endDayOfMonth = endOfMonth(firstDayOfCurrentMonth);
-      const disable =
+      const enable =
         !isBefore(date, startDayOfMonth) && !isAfter(date, endDayOfMonth);
-      return !disable;
+      return !enable;
     }
   };
 
