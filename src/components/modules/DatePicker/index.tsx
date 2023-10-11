@@ -49,7 +49,7 @@ const DatePicker: React.FC<DatePickerProps> = ({
   disableFuture = false,
   disableOutOfMonth = true,
   display = "fullCalendar",
-  type = "year",
+  type = "month",
   minYear = 1000,
   maxYear = 9999,
   value,
@@ -330,7 +330,7 @@ const DatePicker: React.FC<DatePickerProps> = ({
         )}
       </div>
       {displayContent === "day" && (
-        <div className="grid grid-cols-7 items-center justify-between mt-2">
+        <div className="grid grid-cols-7 gap-2 items-center justify-between mt-2">
           {daysName.map((item) => (
             <p key={item} className="leading-7 text-center">
               {item}
